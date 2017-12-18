@@ -1,0 +1,26 @@
+{
+  "name": "shortener-api",
+  "version": "1.0.0",
+  "description": "URL Shortener API ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsouzab/hire.me.git"
+  },
+  "author": "Gabriel Bustamante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsouzab/hire.me/issues"
+  },
+  "homepage": "https://github.com/gsouzab/hire.me#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.13.3"
+  }
+}
