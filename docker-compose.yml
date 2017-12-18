@@ -1,11 +1,11 @@
 version: '2'
 services:
   api:
-    build: ./api
+    build: ./server
     command: npm start
     volumes:
-    - ./api:/usr/app/src
-    - /usr/app/src/node_modules
+    - ./server:/app
+    - /app/node_modules
     ports:
       - "3000:3000"
     depends_on:
