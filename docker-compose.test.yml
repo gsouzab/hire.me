@@ -1,0 +1,21 @@
+version: '2'
+services:
+  api:
+    build: ./server
+    command: npm run test
+    volumes:
+    - ./server:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      PORT: 3000
+      DATABASE_URL: mongodb://shortenapp@mongo/shorten_test
+  mongo:
+    image: mongo:3.6
+    logging:
+      driver: none
+    environment:
+      MONGO_USER: shortenapp
+      MONGO_DB: shorten
